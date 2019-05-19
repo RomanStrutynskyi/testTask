@@ -35,10 +35,9 @@ const styles = css`
 		outline: none;
 	}
 `;
-// console.log(palette("primary", 0))
 
 const StyledLink = styled(
-	({ reverse, palette, height, theme, ...props }) => (
+	({ palette, height, theme, ...props }) => (
 		<Link {...props} />
 	)
 )`
@@ -65,7 +64,6 @@ const Button = ({ type, ...props }) => {
 
 Button.propTypes = {
 	palette: PropTypes.string,
-	reverse: PropTypes.bool,
 	height: PropTypes.number,
 	type: PropTypes.string,
 	to: PropTypes.string,

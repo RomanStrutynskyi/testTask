@@ -7,9 +7,11 @@ import Routes from "./scenes/routes";
 
 const GlobalStyle = createGlobalStyle`
   body {
-	font-family: ${font("primary")};
-    
+		font-family: ${font("primary")};
   }
+	* {
+		box-sizing:border-box;
+	}
 `;
 
 function App() {
